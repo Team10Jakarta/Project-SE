@@ -1,0 +1,174 @@
+/**Responsive**/
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url('assets/images/nyc.jpg');
+        background-position: top;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+
+    .header-title {
+        text-align: left;
+        color: #ffff;
+        margin-left: 100px;
+        margin-top: 71px;
+    }
+
+    header h1 {
+        font-size: 3em;
+        border-bottom: 3px solid #ffff;
+        padding-bottom: 5px;
+        width: 65%;
+        text-shadow:
+            -3px -3px 0 navy,
+            3px -3px 0 navy,
+            -3px 3px 0 navy,
+            3px 3px 0 navy;
+    }
+
+    header p {
+        font-size: 2em;
+        line-height: 1px;
+        text-shadow:
+            -1px -1px 0 #0a142f,
+            1px -1px 0 #0a142f,
+            -1px 1px 0 #0a142f,
+            1px 1px 0 #0a142f;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        font-size: 15px;
+    }
+
+    .TOTAL-SALE {
+        color: #0a142f;
+        font-size: 20px;
+    }
+
+    .grafik img {
+        width: 95%;
+    }
+
+    .footer-p {
+        display: flex;
+        gap: 45px;
+        font-family: "Actor", sans-serif;
+        font-size: 1em;
+        color: #fff;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    header {
+        background-image: url('assets/images/nyc.jpg');
+        background-position: top;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+        position: relative;
+    }
+
+    .revou {
+        width: 40px;
+    }
+
+    .km,
+    .msib {
+        width: 60px;
+
+    }
+
+    .header-title {
+        text-align: left;
+        color: #ffff;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        border-bottom: 3px solid #ffff;
+        padding-bottom: 5px;
+        width: 60%;
+        text-shadow:
+            -3px -3px 0 navy,
+            3px -3px 0 navy,
+            -3px 3px 0 navy,
+            3px 3px 0 navy;
+    }
+
+    header p {
+        font-size: 25px;
+        line-height: 1px;
+        text-shadow:
+            -1px -1px 0 #0a142f,
+            1px -1px 0 #0a142f,
+            -1px 1px 0 #0a142f,
+            1px 1px 0 #0a142f;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        font-size: 10px;
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+    }
+
+    .recordcount {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 120px;
+        height: 50px;
+        background-color: #f0f0f0;
+        color: #0a142f;
+        border: 2px solid #0a142f;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .recordcount span {
+        font-size: 10px;
+    }
+
+    .dashboard select {
+        background-color: #f0f0f0;
+        font-size: 8px;
+        height: 40px;
+        border-radius: 10px;
+        border: 2px solid #0a142f;
+        color: #0a142f;
+    }
+
+    .grafik img {
+        width: 90%;
+    }
+
+    .footer-p {
+        display: flex;
+        gap: 45px;
+        font-family: "Actor", sans-serif;
+        font-size: 1em;
+        color: #fff;
+        padding-left: 50px;
+    }
+}
