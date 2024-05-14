@@ -1,0 +1,309 @@
+.body-background {
+    margin: 0;
+    background-color: rgb(203, 203, 203);
+    font-family: "Libre Baskerville", serif;
+}
+
+/**header**/
+header {
+    background-image: url('assets/images/nyc.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 95, 0.333);
+}
+
+.header-logo {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.revou {
+    width: 60px;
+}
+
+.km,
+.msib {
+    width: 100px;
+
+}
+
+.header-title {
+    text-align: left;
+    color: #ffff;
+    margin-left: 150px;
+    margin-top: 71px;
+}
+
+header h1 {
+    font-size: 4em;
+    border-bottom: 3px solid #ffff;
+    padding-bottom: 5px;
+    width: 41%;
+    text-shadow:
+        -3px -3px 0 navy,
+        3px -3px 0 navy,
+        -3px 3px 0 navy,
+        3px 3px 0 navy;
+
+}
+
+header p {
+    font-size: 45px;
+    line-height: 1px;
+    text-shadow:
+        -1px -1px 0 #0a142f,
+        1px -1px 0 #0a142f,
+        -1px 1px 0 #0a142f,
+        1px 1px 0 #0a142f;
+}
+
+.header-nav {
+    background-color: rgba(6, 6, 50, 0.596);
+    color: #ffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1em;
+}
+
+.nav-item a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #0a142f;
+    background-color: #ffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/**main content**/
+.main-section {
+    margin: 20px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.recordcount {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 120px;
+    height: 50px;
+    background-color: #f0f0f0;
+    color: #0a142f;
+    border: 2px solid #0a142f;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.recordcount span {
+    font-size: 1em;
+}
+
+.dashboard select {
+    background-color: #f0f0f0;
+    font-size: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #0a142f;
+    color: #0a142f;
+}
+
+.TOTAL-SALE {
+    margin: 20px;
+    padding: 20px;
+    color: navy;
+    font-size: xx-large;
+}
+
+.grafik {
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.member-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#ffffff 0%, #0a142f 100%);
+}
+
+.wrapper {
+    background: #fff;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.executive-team {
+    text-align: center;
+}
+
+.hr-team {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-mem {
+    margin: 8px;
+    text-align: center;
+}
+
+.image-member {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 13px;
+}
+
+.h4-team-member {
+    text-align: center;
+    font-size: 16px;
+    margin: 7px;
+}
+
+/**footer**/
+.background {
+    background-color: #0a142f;
+    padding: 50px 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.upskill {
+    font-family: "Actor", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffff;
+    opacity: 0.6;
+    letter-spacing: 2.8px;
+    margin-bottom: 20px;
+}
+
+.req {
+    font-family: "Libre Baskerville", serif;
+    font-size: 50px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.visual {
+
+    text-align: center;
+    width: 100%;
+    font-family: "Actor", sans-serif;
+    font-size: 22px;
+    color: #ffff;
+    opacity: 0.8;
+    line-height: 1.83;
+    margin-bottom: 45px;
+}
+
+.button button {
+    font-family: "Actor", sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #ffff;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 30px;
+    background-color: #0081fe;
+    margin-bottom: 50px;
+}
+
+.button button:hover {
+    background-color: #4ea7ff;
+}
+
+.cr {
+    font-family: "Actor", sans-serif;
+    font-size: 16px;
+    color: #ffff;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.line {
+    border: 1px solid #fff;
+    opacity: 0.2;
+    margin-bottom: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 45px;
+    font-family: "Actor", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 180px;
+}
+
+.footer-p a {
+    color: inherit;
+    max-width: 150px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
