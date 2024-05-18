@@ -104,6 +104,23 @@ header p {
 }
 
 /**main content**/
+#mainContent {
+    margin: auto;
+    padding: 20px;
+}
+
+.chart-container {
+    background-color: #0a142f;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 600px;
+    color: #ffff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
 .main-section {
     margin: 20px;
 }
