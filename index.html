@@ -35,7 +35,6 @@
                         <div class="nav-item"><a href="#dashboard">Dashboard</a></div>
                         <div class="nav-item"><a href="#totalsales">Total Sales</a></div>
                         <div class="nav-item"><a href="#averagesales">Average Sales</a></div>
-                        <div class="nav-item"><a href="#result">Result</a></div>
                         <div class="nav-item"><a href="#ourteams">Our Teams</a></div>
                         <div class="nav-item"><a href="#contact">Contact</a></div>
                     </nav>
@@ -73,36 +72,48 @@
             <div class="grafik-section">
                 <div id="mainContent">
                     <div class="chart-container">
-                        <canvas id="chart1"></canvas>
+                        <div class="chart1" id="#totalsales">
+                            <canvas id="chart1"></canvas>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="table-container">
+                            <div class="chart2" id="#averagesales">
+                                <canvas id="chart2"></canvas>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <div class="chart5">
+                                <table id="chart5">
+                                    <thead>
+                                        <tr>
+                                            <th>NEIGHBORHOOD</th>
+                                            <th>Record Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                    <br>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                     <div class="chart-container">
-                        <canvas id="chart2"></canvas>
+                        <div class="chart3">
+                            <canvas id="chart3"></canvas>
+                        </div>
                     </div>
                     <div class="chart-container">
-                        <canvas id="chart3"></canvas>
-                    </div>
-                    <div class="chart-container">
-                        <canvas id="chart4"></canvas>
-                    </div>
-                    <div class="table-container">
-                        <table id="chart5">
-                            <thead>
-                                <tr>
-                                    <th>NEIGHBORHOOD</th>
-                                    <th>Record Count</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                            <br>
-                        </table>
+                        <div class="chart4">
+                            <canvas id="chart4"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
     </div>
 
 
-    <div class="member-team">
+    <div class="member-team" id="#ourteams">
         <div class="wrapper">
             <h2 class="executive-team">Member Team 10</h2>
             <hr class="hr-team">
@@ -203,7 +214,7 @@
                     © 2024 Section Jakarta Team 10, RevoU
                 </p>
                 <div class="line"></div>
-                <div class="footer">
+                <div class="footer" id="#contact">
                     <div class="footer-img">
                         <img src="assets/logo/revou logo.svg" alt="Logo">
                     </div>

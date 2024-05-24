@@ -2,25 +2,52 @@
 @media screen and (max-width: 768px) {
     header {
         background-image: url('assets/images/nyc.jpg');
-        background-position: top;
+        background-position: center;
         background-size: cover;
-        height: 400px;
+        height: 200px;
         width: 100%;
         position: relative;
     }
 
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(90, 90, 95, 0.333);
+    }
+
+    .header-logo {
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: flex-end;
+        display: flex;
+        gap: 30px;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+
+    .revou {
+        width: 45px;
+    }
+
+    .km,
+    .msib {
+        width: 70px;
+
+    }
+
     .header-title {
-        text-align: left;
+        text-align: center;
         color: #ffff;
-        margin-left: 100px;
-        margin-top: 71px;
     }
 
     header h1 {
-        font-size: 3em;
-        border-bottom: 3px solid #ffff;
-        padding-bottom: 5px;
-        width: 65%;
+        font-size: 2em;
+        justify-content: center;
+        line-height: 1px;
+        padding-bottom: 20px;
         text-shadow:
             -3px -3px 0 navy,
             3px -3px 0 navy,
@@ -29,13 +56,13 @@
     }
 
     header p {
-        font-size: 2em;
+        font-size: 1em;
         line-height: 1px;
         text-shadow:
-            -1px -1px 0 #0a142f,
-            1px -1px 0 #0a142f,
-            -1px 1px 0 #0a142f,
-            1px 1px 0 #0a142f;
+            -2px -2px 0 #0a142f,
+            2px -2px 0 #0a142f,
+            -2px 2px 0 #0a142f,
+            2px 2px 0 #0a142f;
     }
 
     .nav-list {
@@ -45,22 +72,42 @@
         font-size: 15px;
     }
 
-    .TOTAL-SALE {
-        color: #0a142f;
-        font-size: 20px;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
     }
 
-    .grafik img {
-        width: 95%;
+    .footer-img {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .footer-p {
         display: flex;
+        flex: 2;
+        justify-content: center;
         gap: 45px;
         font-family: "Actor", sans-serif;
-        font-size: 1em;
+        font-size: 16px;
         color: #fff;
-        padding-left: 50px;
+    }
+
+    .footer-p a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .footer-icon {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        gap: 25px;
     }
 }
 
@@ -159,16 +206,41 @@
         color: #0a142f;
     }
 
-    .grafik img {
-        width: 90%;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .footer-img {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .footer-p {
         display: flex;
+        flex: 2;
+        justify-content: center;
         gap: 45px;
         font-family: "Actor", sans-serif;
-        font-size: 1em;
+        font-size: 16px;
         color: #fff;
-        padding-left: 50px;
+    }
+
+    .footer-p a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .footer-icon {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        gap: 25px;
     }
 }

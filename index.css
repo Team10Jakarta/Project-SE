@@ -112,7 +112,8 @@ header p {
 }
 
 .dashboard {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .recordcount {
@@ -143,14 +144,58 @@ header p {
     border-radius: 5px;
 }
 
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .chart-container {
     background-color: #0a142f;
     border-radius: 10px;
     padding: 10px;
-    max-width: 600px;
     color: #ffffff;
-    margin: auto;
+    margin: 0;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart1 {
+    width: 100%;
+
+}
+
+.chart3 {
+    width: 100%;
+}
+
+.chart4 {
+    width: 100%;
+}
+
+#chart1 {
+    max-height: 400px;
+}
+
+#chart2 {
+    max-height: 400px;
+}
+
+#chart4 {
+    max-height: 400px;
+}
+
+#chart3 {
+    max-height: 400px;
+}
+
+#chart5 {
+    max-height: 400px;
+    margin: auto;
+    font-size: 14px;
+    text-wrap: nowrap;
+    border-collapse: collapse;
 }
 
 .chart-container .chart-title {
@@ -164,11 +209,13 @@ header p {
 .table-container {
     background-color: #0a142f;
     border-radius: 10px;
-    padding: 10px;
-    max-width: 600px;
     color: #ffffff;
-    margin: auto;
+    margin: 6;
     margin-bottom: 20px;
+    flex: 0 0 50%;
+    max-width: 49%;
+    box-sizing: content-box;
+
 }
 
 .custom-table {
@@ -189,11 +236,11 @@ header p {
 }
 
 .custom-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    text-wrap: nowrap;
     text-align: center;
     background-color: #0a142f;
     color: white;
+    padding: 12 15;
 }
 
 .pagination-container {
@@ -348,27 +395,35 @@ header p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 20px 0;
+}
+
+.footer-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .footer-p {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: 2;
+    justify-content: center;
     gap: 45px;
     font-family: "Actor", sans-serif;
     font-size: 16px;
     color: #fff;
-    padding-left: 180px;
 }
 
 .footer-p a {
     color: inherit;
-    max-width: 150px;
+    text-decoration: none;
 }
 
 .footer-icon {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: flex-end;
     gap: 25px;
 }
