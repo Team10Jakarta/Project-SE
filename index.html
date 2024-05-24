@@ -7,11 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Actor&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="index.js"></script>
+    <script src="filter.js"></script>
+
 </head>
 
 <body>
@@ -46,37 +49,26 @@
                     <span>Record Count <br> 15.647</span>
                 </div>
                 <div class="filter">
-                    <div class="neighborhood">
-                        <select name="neighborhood" id="neighborhood">
-                            <option value="">NEIGHBORHOOD</option>
-                            <option value="bedfordStuyvesant">Beford Stuyvesant</option>
-                            <option value="boroughPark">Borough Park</option>
-                            <option value="bushwick">Bushwick</option>
-                            <option value="crownHeights">Crown Heights</option>
-                            <option value="eastNewYork">East New York</option>
-                        </select>
-                    </div>
-                    <div class="building-class">
-                        <select name="buildingClass" id="buildingClass">
-                            <option value="">BUILDING CLASS CATEGORY</option>
-                            <option value="01">One Family Dwellings</option>
-                            <option value="02">Two Family Dwellings</option>
-                            <option value="03">Three Family Dwellings</option>
-                            <option value="05">Tax Class 1 Vacant Land</option>
-                            <option value="07">Rentals - Walkup Aprtments</option>
-                        </select>
-                    </div>
-                    <div class="borough">
-                        <select name="borough" id="borough">
-                            <option value="">BOROUGH</option>
-                            <option value="1">Manhattan</option>
-                            <option value="2">Bronx</option>
-                            <option value="3">Brooklyn</option>
-                            <option value="4">Queens</option>
-                            <option value="5">Staten Island</option>
-                        </select>
-                    </div>
+                    <label for="borough">Borough:</label>
+                    <select id="boroughFilter">
+                        <option value="">All Borough</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
+
+                    <label for="neighborhood">Neighborhood:</label>
+                    <select id="neighborhood">
+                        <option value="">All Neighborhood</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
+
+                    <label for="buildingClass">Building Class Category:</label>
+                    <select id="buildingClass">
+                        <option value="">All Building Class Category</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
                 </div>
+
+
             </div>
             <div class="grafik-section">
                 <div id="mainContent">
@@ -92,10 +84,24 @@
                     <div class="chart-container">
                         <canvas id="chart4"></canvas>
                     </div>
+                    <div class="table-container">
+                        <table id="chart5">
+                            <thead>
+                                <tr>
+                                    <th>NEIGHBORHOOD</th>
+                                    <th>Record Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <br>
+                        </table>
+                    </div>
                 </div>
-
             </div>
     </div>
+
+
     <div class="member-team">
         <div class="wrapper">
             <h2 class="executive-team">Member Team 10</h2>

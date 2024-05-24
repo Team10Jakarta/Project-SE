@@ -7,9 +7,9 @@
 /**header**/
 header {
     background-image: url('assets/images/nyc.jpg');
-    background-position: top;
+    background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 250px;
     width: 100%;
     position: relative;
 }
@@ -34,27 +34,25 @@ header {
 }
 
 .revou {
-    width: 60px;
+    width: 50px;
 }
 
 .km,
 .msib {
-    width: 100px;
+    width: 80px;
 
 }
 
 .header-title {
-    text-align: left;
+    text-align: center;
     color: #ffff;
-    margin-left: 150px;
-    margin-top: 71px;
 }
 
 header h1 {
-    font-size: 4em;
-    border-bottom: 3px solid #ffff;
-    padding-bottom: 5px;
-    width: 41%;
+    font-size: 3em;
+    justify-content: center;
+    line-height: 1px;
+    padding-bottom: 20px;
     text-shadow:
         -3px -3px 0 navy,
         3px -3px 0 navy,
@@ -64,13 +62,13 @@ header h1 {
 }
 
 header p {
-    font-size: 45px;
+    font-size: 2em;
     line-height: 1px;
     text-shadow:
-        -1px -1px 0 #0a142f,
-        1px -1px 0 #0a142f,
-        -1px 1px 0 #0a142f,
-        1px 1px 0 #0a142f;
+        -2px -2px 0 #0a142f,
+        2px -2px 0 #0a142f,
+        -2px 2px 0 #0a142f,
+        2px 2px 0 #0a142f;
 }
 
 .header-nav {
@@ -87,7 +85,7 @@ header p {
 .nav-list {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 80px;
     font-size: 1em;
 }
 
@@ -109,33 +107,12 @@ header p {
     padding: 20px;
 }
 
-.chart-container {
-    background-color: #0a142f;
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 600px;
-    color: #ffff;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-
-
 .main-section {
     margin: 20px;
 }
 
 .dashboard {
-    display: flex;
-    justify-content: right;
-    gap: 30px;
-    align-items: center;
-}
-
-.filter {
-    display: flex;
-    justify-content: right;
-    gap: 20px;
+    display: block;
 }
 
 .recordcount {
@@ -151,32 +128,103 @@ header p {
     border-radius: 10px;
 }
 
-.recordcount span {
-    font-size: 1em;
+.filter {
+    justify-content: right;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.dashboard select {
-    background-color: #f0f0f0;
-    font-size: 10px;
-    height: 40px;
+.filter label {
+    margin-right: 5px;
+}
+
+.filter select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.chart-container {
+    background-color: #0a142f;
     border-radius: 10px;
-    border: 2px solid #0a142f;
-    color: #0a142f;
+    padding: 10px;
+    max-width: 600px;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-.TOTAL-SALE {
-    margin: 20px;
-    padding: 20px;
-    color: navy;
-    font-size: xx-large;
+.chart-container .chart-title {
+    color: #ffffff;
 }
 
-.grafik {
+.chart-container .chart-legend {
+    color: #ffffff;
+}
+
+.table-container {
+    background-color: #0a142f;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 600px;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.custom-table {
+    width: 30%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.custom-table tr {
+    background-color: #f2f2f2;
+}
+
+.custom-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0a142f;
+    color: white;
+}
+
+.pagination-container {
+    display: flex;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pagination-button {
+    background-color: #0a142f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.pagination-button:disabled {
+    background-color: #4a4a4a;
+    cursor: not-allowed;
+}
+
+.pagination-container span {
+    margin: 0 10px;
+    color: #ffffff;
 }
 
 
+/**Our teams**/
 .member-team {
     display: flex;
     justify-content: center;
